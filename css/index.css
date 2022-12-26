@@ -228,8 +228,13 @@
     padding:2px 0px;
     font-size: 8px;
 }
+#table-box table tr td button{
+   width:80%;
+   height: auto;
+}
 #table-box table tr td button i{
-    font-size:10px;
+    font-size: 8px;
+    padding: 2px;
 }
 
 #modal{
