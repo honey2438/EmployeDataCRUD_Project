@@ -50,7 +50,7 @@ add = () => {
     tableData.innerHTML += `
         <tr index="${index}">
                 <td>${index + 1}</td>
-                <td><img src="${data.img}" height="40px" width="40px"></td>
+                <td><img src="${data.img}" height="40px" width="40px" id="row_image"></td>
                 <td>${data.id}</td>
                 <td>${data.name}</td>
                 <td>${data.lastName}</td>
