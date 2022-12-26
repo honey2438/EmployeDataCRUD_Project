@@ -223,6 +223,6 @@ btn2.onclick=function(){
 
 // display localStorage data on screen even after refresh
 
-if(localStorage.length!=0){
+if(localStorage.getItem("userData")){
   add();
 }

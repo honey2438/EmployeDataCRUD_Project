@@ -131,14 +131,14 @@
 #left-modal i{
     color: black;
     position: absolute;
-    top: 240px;
-    left: 124px;
+    top: 40%;
+    left: 14%;
     font-size: 30px;
 }
 #left-modal input{
     position: absolute;
-    top: 244px;
-    left: 96px;
+    top: 40%;
+    left: 14%;
     filter:opacity(0);
 }
 
@@ -154,7 +154,7 @@
     padding:15px;
 }
 .input-box label{
-    font-size: 25px;
+    font-size: 20px;
 }
 .input-box input{
     padding:6px 15px;
@@ -162,7 +162,7 @@
     font-size: 18px;
     border:none;
     border-bottom:2px solid blue;
-    width:400px;
+    width:300px;
     text-align: center;
     background-color:rgb(237, 237, 237) ;
 }
