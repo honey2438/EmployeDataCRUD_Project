@@ -1,0 +1,293 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+:root{
+    --button-text:22px;
+}
+#header{
+    background-color: rgb(255, 84, 84);
+    padding:10px 30px;
+}
+#header h4{
+    font-size: 28px;
+    color:white;
+}
+#upper-box{
+    height: 100px;
+    width:100%;
+   
+    display: flex;
+    padding:20px;
+}
+#left-box{
+    width:50%;
+}
+#right-box{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+.btn{
+    padding:10px 20px;
+    font-size: 22px;
+    margin:7px 10px;
+    border:none;
+    border-radius: 8px;
+    outline:none;
+
+}
+#btn1{
+    background-color: lightblue;
+}
+#btn2{
+    background-color: rgb(253, 61, 61);
+}
+#right-box i{
+    font-size:30px;
+    color:skyblue;
+    padding:16px;
+}
+#right-box input{
+    padding:6px 15px;
+    outline:none;
+    border:none;
+    border-bottom:2px solid blue;
+    font-size: 20px;
+    width:300px;
+    text-align: center;
+}
+#search_btn{
+    background-color: rgb(189, 189, 189);
+}
+#table-box{
+    width:100%;
+    padding:30px;
+}
+#table-box table{
+    width:100%;
+    
+    
+}
+#table-box table tr th{
+    border-right:1px solid black;
+    padding-top:10px;
+    border-bottom:1px solid black;
+}
+#table-box table tr td{
+    border-right:1px solid black;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border-bottom:1px solid black;
+    text-align: center;
+}
+#table-box table tr td button{
+    outline:none;
+    border:none;
+    width: 30%;
+}
+#table-box table tr td button i{
+ padding:10px;
+ font-size: 20px;
+}
+.btn3{
+    color:blue;
+}
+.btn4{
+    color:red;
+}
+#modal{
+    width: 0%;
+    height: auto;
+    position: fixed;
+    top: 100px;
+    left: 325px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    display: flex;
+    border-top: 10px solid skyblue;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+#modal.active{
+    opacity: 100;
+    z-index:1;
+    width:60%;
+}
+#left-modal{
+    width:30%;
+    height: 100%;
+}
+#left-modal img{
+    border: 3px solid grey;
+    border-radius: 100px;
+    position: absolute;
+    top:22px;
+    left:35px;
+}
+#left-modal i{
+    color: black;
+    position: absolute;
+    top: 240px;
+    left: 124px;
+    font-size: 30px;
+}
+#left-modal input{
+    position: absolute;
+    top: 244px;
+    left: 96px;
+    filter:opacity(0);
+}
+
+#right-modal{
+    width:70%;
+    height: 100%;
+    border-left:5px solid skyblue;
+}
+.input-box{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding:15px;
+}
+.input-box label{
+    font-size: 25px;
+}
+.input-box input{
+    padding:6px 15px;
+    outline:none;
+    font-size: 18px;
+    border:none;
+    border-bottom:2px solid blue;
+    width:400px;
+    text-align: center;
+    background-color:rgb(237, 237, 237) ;
+}
+/* .btn-box{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding:15px;
+} */
+#btn5{
+    background-color: rgb(95, 95, 255);
+    width:300px;
+}
+#btn6{
+    background-color: skyblue;
+    width:300px;
+}
+#close{
+    position: absolute;
+    color: orangered;
+    top: -44px;
+    right: -29px;
+    font-size: 37px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+@media (max-width:1100px){
+#header{
+    padding:8px 18px;
+}
+#header h4{
+    font-size: 15px;
+}
+#upper-box{
+    height:70px;
+    padding:15px
+}
+.btn{
+    padding: 3px 5px;
+    font-size: 10px;
+    margin: 3px 5px;
+}
+#right-box i{
+    font-size:20px;
+    padding:8px;
+}
+#right-box input{
+    padding:4px 10px;
+    border-bottom: 1px solid blue;
+    width:100px;
+    font-size: 10px;
+}
+#table-box{
+    padding:10px;
+}
+#table-box table tr th{
+    padding:4px 0px;
+    font-size: 8px;
+}
+#table-box table tr td{
+    padding:2px 0px;
+    font-size: 8px;
+}
+#table-box table tr td button i{
+    font-size:10px;
+}
+
+#modal{
+    top:10%;
+    left:20%;
+    flex-direction: column;
+    border:none;
+}
+#modal.active{
+    width:60%;
+    height: auto;
+}
+#left-modal{
+    width: 100%;
+    height: 100px;
+    padding:5px;
+    position:static;
+    display: flex;
+    justify-content: center;
+}
+#left-modal img{
+   width:100px;
+   height:100px;
+   position: static;
+}
+#left-modal i{
+font-size: 20px;
+top:10%;
+left:77%;
+}
+#left-modal input{
+    top:10%;
+    left:77%;
+}
+#right-modal{
+    width:100%;
+    border:none;
+}
+.input-box{
+    padding:10px;
+}
+.input-box label{
+    font-size: 12px;
+}
+.input-box input{
+    padding:3px 8px;
+    font-size: 10px;
+    width:120px;    
+}
+#btn5{
+    width:100px;
+}
+#btn6{
+    width:100px;
+}
+#close{
+    font-size: 20px;
+    top:-17px;
+    right:-13px;
+}
+}

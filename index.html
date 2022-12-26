@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <h4>Employee Data</h4>
+    </div>
+    <div id="upper-box">
+        <div id="left-box">
+            <button class="btn" id="btn1"><i class="fa fa-plus"></i> &nbsp; Add Employee</button>
+            <button class="btn" id="btn2"><i class="fa fa-eraser"></i> &nbsp; Erase All Data</button>
+        </div>
+        <div id="right-box">
+            <i class="fa fa-search"></i>
+            <input type="text" id="search_bar" placeholder="Enter to search">
+            <button class="btn" id="search_btn">Search</button>
+        </div>
+    </div>
+    <div id="table-box">
+        <table>
+            <tr>
+                <th>Sr no</th>
+                <th>Profile</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Office Code</th>
+                <th>Job Title</th>
+                <th>Action</th>
+            </tr>
+           <tbody id="table-data">
+
+           </tbody>
+        </table>
+    </div>
+    <div id="modal">
+        <button id="close"><i class="fa fa-times-circle" id="cancel"></i></button>
+        <div id="left-modal">
+            <img id="image" src="pf pic.jpg" height="200" width="200" alt="">
+            <i class="fa fa-plus"></i>
+            <input type="file" id="upload">
+        </div>
+        <div id="right-modal">
+            <form id="register-form">
+                <div class="input-box">
+                    <label for="Id">Id</label>
+                    <input required type="text" id="Id" name="Id">
+                </div>
+                <div class="input-box">
+                    <label for="Name">Name</label>
+                    <input required type="text" id="Name" name="Name">
+                </div>
+                <div class="input-box">
+                    <label for="LastName">Last Name</label>
+                    <input required type="text" id="LastName" name="LastName">
+                </div>
+                <div class="input-box">
+                    <label for="E-mail">E-mail</label>
+                    <input required type="text" id="E-mail" name="E-mail">
+                </div>
+                <div class="input-box">
+                    <label for="OfficeCode">Office Code</label>
+                    <input required type="text" id="OfficeCode" name="OfficeCode">
+                </div>
+                <div class="input-box">
+                    <label for="JobTitle">Job Title</label>
+                    <input required type="text" id="JobTitle" name="JobTitle">
+                </div>
+                <div class="input-box">
+                    <button type="submit" class="btn" id="btn5"><i></i>Register</button>
+                    <button class="btn" id="btn6"><i></i>Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
