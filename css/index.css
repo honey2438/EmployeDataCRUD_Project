@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-:root{
-    --button-text:22px;
+body{
+    background-color: rgb(58, 58, 58);
 }
 #header{
     background-color: rgb(255, 84, 84);
@@ -37,30 +37,48 @@
     border:none;
     border-radius: 8px;
     outline:none;
-
+    color:white;
+    font-weight: bold;
+}
+.btn i{
+    color:white;
 }
 #btn1{
-    background-color: lightblue;
+    background-color: rgb(0, 145, 5) ;
+}
+#btn1:hover{
+    transition: 0.4s ease-in-out;
+    background-color:rgb(0, 185, 49)
 }
 #btn2{
-    background-color: rgb(253, 61, 61);
+    background-color: rgb(255, 47, 47);
+}
+#btn2:hover{
+    transition: 0.4s ease-in-out;
+    background-color:rgb(255, 106, 0) ;
 }
 #right-box i{
     font-size:30px;
-    color:skyblue;
+    color:rgb(75, 204, 255);
     padding:16px;
 }
 #right-box input{
     padding:6px 15px;
     outline:none;
     border:none;
-    border-bottom:2px solid blue;
+    border-bottom:2px solid rgb(217, 217, 217);
     font-size: 20px;
     width:300px;
     text-align: center;
+    color:white;
+    background-color: rgb(58, 58, 58);
 }
 #search_btn{
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(21, 79, 255);
+}
+#search_btn:hover{
+    transition: 0.4s ease-in-out;
+    background-color: rgb(60, 109, 255);
 }
 #table-box{
     width:100%;
@@ -68,35 +86,46 @@
 }
 #table-box table{
     width:100%;
-    
+    color:white;
     
 }
 #table-box table tr th{
-    border-right:1px solid black;
+    border-right:2px solid rgb(255, 255, 255);
     padding-top:10px;
-    border-bottom:1px solid black;
+    border-bottom:2px solid rgb(255, 255, 255);
 }
 #table-box table tr td{
-    border-right:1px solid black;
+    border-right:2px solid rgb(255, 255, 255);
     padding-top:5px;
     padding-bottom: 5px;
-    border-bottom:1px solid black;
+    border-bottom:2px solid rgb(255, 255, 255);
     text-align: center;
 }
 #table-box table tr td button{
     outline:none;
     border:none;
     width: 30%;
+    background-color: rgb(58, 58, 58);
 }
 #table-box table tr td button i{
  padding:10px;
  font-size: 20px;
+ cursor: pointer;
 }
+
 .btn3{
-    color:blue;
+    color:rgb(48, 179, 255);
 }
 .btn4{
-    color:red;
+    color:rgb(255, 32, 32);
+}
+.btn3:hover{
+    color:rgb(48, 103, 255);
+    transition: 0.3s ease-in-out;
+}
+.btn4:hover{
+    color:rgb(224, 0, 0);
+    transition: 0.3s ease-in-out;
 }
 #modal{
     width: 0%;
@@ -104,7 +133,7 @@
     position: fixed;
     top: 100px;
     left: 325px;
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(30, 30, 30);
     border-radius: 10px;
     display: flex;
     border-top: 10px solid skyblue;
@@ -129,7 +158,7 @@
     left:35px;
 }
 #left-modal i{
-    color: black;
+    color: rgb(236, 236, 236);
     position: absolute;
     top: 40%;
     left: 14%;
@@ -155,16 +184,19 @@
 }
 .input-box label{
     font-size: 20px;
+    color:white;
+    font-weight: bold;
 }
 .input-box input{
+    color:white;
     padding:6px 15px;
     outline:none;
     font-size: 18px;
     border:none;
-    border-bottom:2px solid blue;
+    border-bottom:2px solid rgb(255, 255, 255);
     width:300px;
     text-align: center;
-    background-color:rgb(237, 237, 237) ;
+    background-color:rgb(30,30,30) ;
 }
 /* .btn-box{
     width:100%;
@@ -173,8 +205,12 @@
     padding:15px;
 } */
 #btn5{
-    background-color: rgb(95, 95, 255);
+    background-color: rgb(0, 145, 5);
     width:300px;
+}
+#btn5:hover{
+    transition: 0.4s ease-in-out;
+    background-color:rgb(0, 185, 49);
 }
 #btn6{
     background-color: skyblue;

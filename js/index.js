@@ -104,7 +104,7 @@ add = () => {
       OfficeCode.value = td[6].innerHTML;
       JobTitle.value = td[7].innerHTML;
 
-      addEmployee.onclick();
+      modal.classList.add("active");
       registerBtn.disabled = true;
       updatebtn.disabled = false;
 
@@ -120,6 +120,8 @@ add = () => {
           img: imgUrl == undefined ? "pf pic.jpg" : imgUrl,
         };
         localStorage.setItem("userData", JSON.stringify(userData));
+        image.src = "pf pic.jpg";
+        imgUrl = undefined;
         add();
         close.onclick();
         registerForm.reset("");
